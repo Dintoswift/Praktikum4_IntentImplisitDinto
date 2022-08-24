@@ -1,0 +1,116 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".IntentImplisit_Activity" >
+    
+    <EditText
+        android:id="@+id/editTelepon"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/buttonTelepon"
+        android:layout_alignParentTop="true"
+        android:ems="10"
+        android:hint="Masukkan Nomor"
+        android:inputType="phone"
+        android:textStyle="bold" >
+        <requestFocus />
+    </EditText>
+
+    <Button
+        android:id="@+id/buttonTelepon"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editTelepon"
+        android:layout_centerHorizontal="true"
+        android:onClick="phone"
+        android:text="Open Phone Number"
+        android:textStyle="bold" 
+        android:textColor="#ffffff"
+        android:background="#0000ff"/>
+
+    <EditText
+        android:id="@+id/editBrowser"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/buttonTelepon"
+        android:layout_below="@+id/buttonTelepon"
+        android:layout_marginTop="21dp"
+        android:ems="10"
+        android:hint="Masukkan Link URL"
+        android:inputType="textUri"
+        android:textStyle="bold" />
+    
+    <Button
+        android:id="@+id/buttonBrowser"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/editBrowser"
+        android:layout_below="@+id/editBrowser"
+        android:onClick="browser"
+        android:text="Open Browser URL"
+        android:textStyle="bold" 
+        android:textColor="#ffffff"
+        android:background="#0000ff"/>
+    
+    <EditText
+        android:id="@+id/editLokasi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/buttonBrowser"
+        android:layout_below="@+id/buttonBrowser"
+        android:layout_marginTop="19dp"
+        android:ems="10"
+        android:hint="Cari Lokasi"
+        android:textStyle="bold"
+        android:inputType="textUri" />
+
+    <Button
+        android:id="@+id/buttonLokasi"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/editLokasi"
+        android:layout_below="@+id/editLokasi"
+        android:text="Open Lokasi"
+        android:onClick="lokasi"
+        android:textStyle="bold"
+        android:textColor="#ffffff"
+        android:background="#0000ff" />
+
+    <EditText
+        android:id="@+id/editTeks"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/buttonTeks"
+        android:layout_below="@+id/buttonLokasi"
+        android:layout_marginTop="16dp"
+        android:ems="50"
+        android:hint="Tuliskan Pesan"
+        android:textStyle="bold"
+        android:inputType="text" />
+
+    <Button
+        android:id="@+id/buttonTeks"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/buttonLokasi"
+        android:layout_below="@+id/editTeks"
+        android:text="Bagikan Teks"
+        android:onClick="teks"
+        android:textStyle="bold" 
+        android:textColor="#ffffff"
+        android:background="#0000ff"/>
+
+    
+
+    
+    
+</RelativeLayout>
